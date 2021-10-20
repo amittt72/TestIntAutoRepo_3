@@ -16,7 +16,7 @@ public class LoginFuncTestClass extends TestBase {
 
     @BeforeClass
     public void setUp(){
-        setUp("CHROME", "https://www.gmail.com");
+        driver = setUp("CHROME", "https://www.gmail.com");
     }
 
     @Test

@@ -1,0 +1,4 @@
+# Project exclude paths
+/auto-framework/target/
+/auto-tests/target/
+/page-objects/target/

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auto-tests" />
+        <module name="auto-framework" />
+        <module name="page-objects" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auto-framework" target="8" />
+      <module name="auto-tests" target="8" />
+      <module name="page-objects" target="8" />
+      <module name="TestIntAutoRepo_3" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

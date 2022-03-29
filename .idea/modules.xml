@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TestIntAutoRepo_3.iml" filepath="$PROJECT_DIR$/TestIntAutoRepo_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auto-framework/auto-framework.iml" filepath="$PROJECT_DIR$/auto-framework/auto-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auto-tests/auto-tests.iml" filepath="$PROJECT_DIR$/auto-tests/auto-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/page-objects/page-objects.iml" filepath="$PROJECT_DIR$/page-objects/page-objects.iml" />
+    </modules>
+  </component>
+</project>

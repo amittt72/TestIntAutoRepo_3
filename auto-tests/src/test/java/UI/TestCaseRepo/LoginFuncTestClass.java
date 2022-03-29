@@ -14,6 +14,10 @@ public class LoginFuncTestClass extends TestBase {
     WebDriver driver;
     LoginPage loginPage;
 
+    public LoginFuncTestClass(WebDriver driver) {
+        super(driver);
+    }
+
     @BeforeClass
     public void setUp(){
         driver = setUp("CHROME", "https://www.gmail.com");
@@ -23,6 +27,12 @@ public class LoginFuncTestClass extends TestBase {
     public void testLogin(){
         loginPage = new LoginPage(driver);
         loginPage.login("admin", "abcd");
+        assertEquals(loginPage.getLoginErrorMessage(), "Invalid UserName or Password!");
+    }
+
+    @Test
+    public void testLoginMethod2(){
+        getPOJOParent().getLoginPage().login("admin", "abcd");
         assertEquals(loginPage.getLoginErrorMessage(), "Invalid UserName or Password!");
     }
 

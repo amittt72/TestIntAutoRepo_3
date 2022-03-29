@@ -3,8 +3,12 @@ package BaseFunctionality;
 import org.openqa.selenium.WebDriver;
 import WebDriver.*;
 
-public class TestBase {
+public class TestBase extends POJOParentWeb {
     private static WebDriver driver;
+
+    public TestBase(WebDriver driver) {
+        super(driver);
+    }
 
     public WebDriver setUp(String browserType, String url){
         getDriver(browserType);
@@ -19,6 +23,10 @@ public class TestBase {
             driver = webDriverManager.getDriver();
         }
         return driver;
+    }
+
+    public POJOParent getPOJOParent(){
+        return new POJOParentWeb(driver);
     }
 
     public void quitDriver(){
